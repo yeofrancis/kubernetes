@@ -19,12 +19,24 @@ This TOC will expand as I continue learning.
 
 ```
 k8s.learn/
-├── README.md
-├── TOC.md
-├── notes/
-│ ├── 01_docker_basics.md
-│ └── 02_k8s_intro.md
-└── labs/
-├── lab01_docker-run/
-└── lab02_minikube-setup/
+├─ README.md
+├─ TOC.md
+├─ notes/
+│  ├─ docker/
+│  │  ├─ 01_docker_basics.md
+│  │  └─ 03_dockerfiles.md
+│  └─ kubernetes/
+│     └─ 02_k8s_intro.md
+└─ labs/
+   ├─ docker/
+   │  ├─ lab01_docker-run/
+   │  │  └─ README.md
+   │  └─ lab02_build-dockerfile/
+   │     └─ README.md
+   └─ kubernetes/
+      ├─ lab01_setup-minikube/
+      │  └─ README.md
+      └─ lab02_kubectl/
+         └─ README.md
+
 ```
