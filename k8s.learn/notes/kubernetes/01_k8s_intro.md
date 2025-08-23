@@ -1,11 +1,11 @@
 
 # 01 — Kubernetes Introduction
 
-> **Learning objectives**
-> - Understand Control Plane vs Worker Node roles  
-> - Know the responsibilities of etcd, API server, scheduler, controllers, kubelet, kube-proxy  
-> - Understand basic networking (overlay, kube-proxy)  
-> - Be able to run a single-node lab (minikube) and verify the cluster
+ **Learning objectives**
+ - Understand Control Plane vs Worker Node roles  
+ - Know the responsibilities of etcd, API server, scheduler, controllers, kubelet, kube-proxy  
+ - Understand basic networking (overlay, kube-proxy)  
+ - Be able to run a single-node lab (minikube) and verify the cluster
 
 ---
 
@@ -20,7 +20,7 @@
 ## Kubernetes Architecture Diagram
 
 
-![Kubernetes Architecture](../../diagrams/k8s_architecture.png)
+![Kubernetes Architecture](../../diagrams/K8s_Architecture_Diagram.png)
 
 ---
 
@@ -34,15 +34,20 @@
 - **Container runtime** – pulls images & runs containers (e.g., containerd).
 
 ---
-
 ## Objects you’ll meet first
-- **Pod** (smallest deployable unit), **Deployment** (replicas & rollout),  
-  **Service** (stable access to pods), **Namespace**, **Node**.
-
+- **Pod** – smallest deployable unit
+- **Deployment** – manages replicas & rolling updates
+- **Service** – stable access to Pods
+- **Namespace** – logical isolation
+- **Node** – a worker machine in the cluster
 ---
 
-## Quick verifications (after Lab 01: Minikube)
-```bash
+## Quick verifications 
+```
 kubectl cluster-info
 kubectl get nodes
 kubectl get pods -A
+```
+Full walkthrough in: ../..labs/kubernetes/lab01_setup-minikube/README.md 
+
+CLI details next: ./02_kubectl.md
