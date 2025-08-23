@@ -23,7 +23,7 @@ This TOC will expand as I continue learning.
 
 ## Section 2: Kubernetes Introduction
 - [ ] Notes: [What is Kubernetes?](notes/kubernetes/02_k8s_intro.md)
-- [x] Lab: [Set up Minikube](labs/kubernetes/lab01_setup-minikube/README.md)
+- [x] Lab: [Set up Minikube](labs/kubernetes/lab01_minikube-setup/README.md)
 
 ## Section 2.1: kubectl Basics
 - [ ] Lab: [kubectl Walkthrough](labs/kubernetes/lab02_kubectl/README.md)
