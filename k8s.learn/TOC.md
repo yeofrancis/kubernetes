@@ -10,8 +10,16 @@ This TOC will expand as I continue learning.
 - [x] Lab: [Run Containers with docker run](labs/docker/lab01_docker-run/README.md)
 
 ## Section 1.1: Dockerfiles
-- [ ] Notes: [Writing Dockerfiles](notes/docker/03_dockerfiles.md)
+- [ ] Notes: [Writing Dockerfiles](notes/docker/02_dockerfiles.md)
 - [ ] Lab: [Build an NGINX image](labs/docker/lab02_build-dockerfile/README.md)
+
+## Section 1.2: Docker Compose
+- [ ] Notes: [Docker Compose](notes/docker/04_docker_compose.md)
+- [ ] Lab: [Build NGINX via Compose](labs/docker/lab03_docker-compose-nginx/README.md)
+
+## Section 1.3: Docker Swarm
+- [ ] Notes: [Docker Swarm](notes/docker/04_docker_swarm.md)
+- [ ] Lab: [Docker Swarm Stack](labs/docker/lab04_docker_swarm-stack/README.md)
 
 ## Section 2: Kubernetes Introduction
 - [ ] Notes: [What is Kubernetes?](notes/kubernetes/02_k8s_intro.md)
