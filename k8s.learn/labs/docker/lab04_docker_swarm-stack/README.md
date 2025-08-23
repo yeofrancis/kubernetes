@@ -45,7 +45,19 @@ docker service ps webstack_web
 docker stack rm webstack
 docker swarm leave --force
 ```
-Swarm vs Compose vs K8s:
- - Compose: great for single-host dev (multiple containers).
- - Swarm: clustering & rolling updates, simple UX.
- - Kubernetes: industry-standard orchestrator for prod.
+### Swarm vs Compose vs Kubernetes (mental model)
+
+- **Docker Compose** — single **host**, multi-container dev workflows.
+  - Run: `docker compose up -d`
+  - Good for: local development, simple multi-service setups.
+
+- **Docker Swarm** — **cluster** orchestrator (multi-node).
+  - Concepts: node, service, task, stack; rolling updates, built-in LB, secrets.
+  - Run: `docker swarm init` → `docker stack deploy -c stack.yml app`
+  - Good for: small teams that want simple clustering with Docker UX.
+
+- **Kubernetes** — de-facto **cluster** orchestrator (multi-node) with a huge ecosystem.
+  - Concepts: pod, deployment, service, ingress, HPA, etc.
+  - Run: `kubectl apply -f k8s.yaml`
+  - Good for: production, scalability, extensibility (CRDs/operators), cloud-native tooling.
+
